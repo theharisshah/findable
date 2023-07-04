@@ -43,10 +43,10 @@ class ServiceProvider extends AddonServiceProvider
             AppendEntrySeoFieldsListener::class,
         ],
         EntrySaved::class => [
-            FlushSitemapCache::class,
+//            FlushSitemapCache::class,
         ],
         EntryDeleted::class => [
-            FlushSitemapCache::class,
+//            FlushSitemapCache::class,
         ],
     ];
 

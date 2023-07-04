@@ -24,9 +24,9 @@ class AppendEntrySeoFieldsListener implements SeoFieldsListener
             $contents = $event->blueprint->contents();
 
             $pageSettingsBlueprint = OnPageSettingsBlueprint::requestBlueprint();
-            $pageFields = $pageSettingsBlueprint->contents()['sections']['main'];
+            $pageFields = $pageSettingsBlueprint->contents()['tabs']['main'];
 
-            $contents['sections']['SEO'] = $pageFields;
+            $contents['tabs']['SEO'] = $pageFields;
 
             $event->blueprint->setContents($contents);
         }
